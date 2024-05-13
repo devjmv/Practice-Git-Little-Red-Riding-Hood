@@ -51,10 +51,9 @@ footer .logo a{
 }
 
 .text{
-    padding: 110px;
+    padding: 50px;
     display: flex;
     align-items: center;
-    gap: 60px;
 }
 
 .text .left{

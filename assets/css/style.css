@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #1c1e53;
+    transition: color 0.3s ease;
+}
+
+a:hover{
+    color: #5e3bee !important;
+}
+
+h5{
+    font-size: 20px;
+}
+
+nav{
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    padding: 0 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    box-shadow: 0 5px 80px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo,
+footer .logo{
+    display: flex;
+    align-items: center;
+}
+
+nav .logo a,
+footer .logo a{
+    margin-left: 8px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.text{
+    padding: 110px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.text .left{
+    background-color: #deebee;
+    border-radius: 10px 10px 0 0;
+}
+
+.text .left img{
+    width: 440px;
+}
+
+.text .right p{
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+footer{
+    background-color: #deebee;
+    padding: 85px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .text .left img{
+        width: 370px;
+    }
+
+    .text .right p{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .text{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    nav{
+        justify-content: space-between;
+        padding: 0 42px;
+    }
+
+    .portfolio{
+        padding: 60px 42px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    nav .logo a{
+        font-size: 18px;
+    }
+}

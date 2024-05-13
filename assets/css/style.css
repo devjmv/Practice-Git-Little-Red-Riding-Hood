@@ -22,7 +22,8 @@ a:hover{
 }
 
 h5{
-    font-size: 20px;
+    font-size: 18px;
+    padding: 20px;
 }
 
 nav{
@@ -33,36 +34,50 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 80px;
-    box-shadow: 0 5px 80px rgba(0, 0, 0, 0.1);
+    height: 105px;
+    box-shadow: 0 5px 105px rgba(0, 0, 0, 0.2);
 }
 
-nav .logo,
-footer .logo{
+nav .logo{
     display: flex;
     align-items: center;
 }
 
-nav .logo a,
-footer .logo a{
+nav .logo a{
     margin-left: 8px;
     font-weight: bold;
     font-size: 20px;
 }
 
+nav .logo img,
+footer .logo img{
+    width: 100px;
+    height: 100px;
+}
+
+.body {
+    display: flex;
+    align-items: center;
+}
+
 .text{
-    padding: 50px;
+    padding: 25px;
+    padding-left: 100px;
+    padding-right: 100px;
     display: flex;
     align-items: center;
 }
 
 .text .left{
-    background-color: #deebee;
     border-radius: 10px 10px 0 0;
 }
 
 .text .left img{
     width: 440px;
+}
+
+.text .right {
+    margin-left: 30px;
 }
 
 .text .right p{
@@ -89,6 +104,7 @@ footer{
 }
 
 @media screen and (max-width: 992px) {
+
     .text{
         flex-direction: column;
         justify-content: center;
